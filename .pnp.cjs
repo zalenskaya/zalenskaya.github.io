@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pug-cli", "npm:1.0.0-alpha6"],
             ["sass", "npm:1.53.0"],
-            ["serve", "npm:13.0.2"]
+            ["serve", "npm:13.0.4"]
           ],
           "linkType": "SOFT",
         }]
@@ -2249,7 +2249,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["root-workspace-0b6124", "workspace:."],
             ["pug-cli", "npm:1.0.0-alpha6"],
             ["sass", "npm:1.53.0"],
-            ["serve", "npm:13.0.2"]
+            ["serve", "npm:13.0.4"]
           ],
           "linkType": "SOFT",
         }]
@@ -2309,10 +2309,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["serve", [
-        ["npm:13.0.2", {
-          "packageLocation": "./.yarn/cache/serve-npm-13.0.2-69508247bb-abc6ad27d5.zip/node_modules/serve/",
+        ["npm:13.0.4", {
+          "packageLocation": "./.yarn/cache/serve-npm-13.0.4-ac7826dbbc-5fc40ef49f.zip/node_modules/serve/",
           "packageDependencies": [
-            ["serve", "npm:13.0.2"],
+            ["serve", "npm:13.0.4"],
             ["@zeit/schemas", "npm:2.6.0"],
             ["ajv", "npm:6.12.6"],
             ["arg", "npm:2.0.0"],
