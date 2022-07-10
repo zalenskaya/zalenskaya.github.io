@@ -1,0 +1,80 @@
+#why {
+  background-color: $primary-color;
+  color: $white-color;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  .container {
+    .qr {
+      padding: 16px;
+    }
+    h2 {
+      font-size: 36px;
+      text-align: center;
+      padding-bottom: 32px;
+    }
+    & > p {
+      font-size: 24px;
+      text-align: center;
+      padding-bottom: 22px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .why-not {
+      display: flex;
+      // align-items: center;
+      justify-content: center;
+      .why-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .buttons {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          padding-bottom: 30px;
+          margin: -15px;
+          & > * {
+            margin: 15px;
+          }
+          a {
+            background: #ffffff;
+            box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.25);
+            border-radius: 32px;
+            color: $primary-color;
+            font-size: 18px;
+            padding: 14px 20px;
+            text-decoration: none;
+            white-space: nowrap;
+          }
+        }
+        ul {
+          list-style: none;
+          li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+
+            &:before {
+              content: url("../img/circle-check-fill.svg");
+              padding-right: 15px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+    .why-phone-img {
+      padding-right: 30px;
+    }
+  }
+}
+
+@include media($small-bp) {
+  .why-phone-img {
+    display: none;
+  }
+  .qr {
+    display: none;
+  }
+}

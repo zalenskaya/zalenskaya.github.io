@@ -1,0 +1,18 @@
+#subhead {
+  .container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 64px 0;
+    p {
+      font-size: 24px;
+      color: $grey;
+      max-width: 600px;
+      padding: 0 16px;
+    }
+    img {
+      min-width: 250px;
+    }
+  }
+}

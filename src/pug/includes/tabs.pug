@@ -1,0 +1,49 @@
+.container 
+  h2.tabs-h Возможности приложения VitaKit
+  .tabbed 
+    input(type="radio" id="tab1" name="css-tabs" checked)
+    input(type="radio" id="tab2" name="css-tabs")
+    input(type="radio" id="tab3" name="css-tabs")
+    input(type="radio" id="tab4" name="css-tabs")
+
+    .t-list
+
+      ul.tabs 
+        li.tab
+          label.ml(for="tab1") 
+            h4 Хранение назначений
+            p VitaKit сохранит назначения врача в целости, а электронный рецепт всегда будет под рукой – он не помнется и не потеряется.  
+            label.arrow.next(for="tab2") &raquo;
+
+        li.tab    
+          label.ml(for="tab2")
+            h4 Поиск лекарств
+            p До покупки ознакомьтесь с наличием назначенного лекарства в ближайших аптеках, сравните цены и выберите оптимальный вариант
+            label.arrow.next(for="tab3") &raquo;
+            label.arrow.prev(for="tab1") &laquo;
+
+        li.tab 
+          label.ml(for="tab3") 
+            h4 Оформление заказов
+            p Зарезервируйте лекарство и будьте уверены, что оно «дождется» вас в аптеке.
+            label.arrow.next(for="tab4") &raquo;
+            label.arrow.prev(for="tab2") &laquo;
+
+        li.tab.future 
+          label.ml(for="tab4") 
+            h4 Трекер приемов
+            p Отслеживайте приемы лекарственных средств, напоминания помогут не забыть о нужном приеме, также можете отслеживать статиститку всех своих приемов.
+            label.arrow.prev(for="tab3") &laquo;
+
+      .t-img
+        .tab-content
+          img(src="./img/tabs/3.png")
+
+        .tab-content
+          img(src="./img/tabs/2.png")
+
+        .tab-content
+          img(src="./img/tabs/1.png")
+
+        .tab-content
+          img(src="./img/tabs/4.png")
