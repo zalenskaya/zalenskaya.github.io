@@ -1,7 +1,7 @@
 {
   "scripts": {
     "compile-pug": "pug ./src/pug/index.pug --out ./docs/ --pretty",
-    "copy-html": "cp ./src/html/* ./docs/",
+    "copy-html": "shx cp ./src/html/* ./docs/",
     "compile-css": "sass -s compressed --no-source-map ./src/scss/style.scss ./docs/css/style.css",
     "compile": "yarn compile-css && yarn compile-pug && yarn copy-html",
     "build": "yarn compile",
@@ -10,7 +10,8 @@
   "dependencies": {
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.53.0",
-    "serve": "^13.0.4"
+    "serve": "^13.0.4",
+    "shx": "^0.3.4"
   },
   "packageManager": "yarn@3.1.0"
 }

@@ -37,7 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["pug-cli", "npm:1.0.0-alpha6"],
             ["sass", "npm:1.53.0"],
-            ["serve", "npm:13.0.4"]
+            ["serve", "npm:13.0.4"],
+            ["shx", "npm:0.3.4"]
           ],
           "linkType": "SOFT",
         }]
@@ -1268,6 +1269,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["interpret", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/interpret-npm-1.4.0-17b4b5b0a4-2e5f51268b.zip/node_modules/interpret/",
+          "packageDependencies": [
+            ["interpret", "npm:1.4.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["ip", [
         ["npm:1.1.8", {
           "packageLocation": "./.yarn/cache/ip-npm-1.1.8-abea558b72-a2ade53eb3.zip/node_modules/ip/",
@@ -2162,6 +2172,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["rechoir", [
+        ["npm:0.6.2", {
+          "packageLocation": "./.yarn/cache/rechoir-npm-0.6.2-0df5f171ec-fe76bf9c21.zip/node_modules/rechoir/",
+          "packageDependencies": [
+            ["rechoir", "npm:0.6.2"],
+            ["resolve", "patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["regenerator-runtime", [
         ["npm:0.11.1", {
           "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.11.1-a31e4f8dcd-3c97bd2c7b.zip/node_modules/regenerator-runtime/",
@@ -2249,7 +2269,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["root-workspace-0b6124", "workspace:."],
             ["pug-cli", "npm:1.0.0-alpha6"],
             ["sass", "npm:1.53.0"],
-            ["serve", "npm:13.0.4"]
+            ["serve", "npm:13.0.4"],
+            ["shx", "npm:0.3.4"]
           ],
           "linkType": "SOFT",
         }]
@@ -2367,6 +2388,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/shebang-regex-npm-1.0.0-c3612b74e9-404c5a752c.zip/node_modules/shebang-regex/",
           "packageDependencies": [
             ["shebang-regex", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["shelljs", [
+        ["npm:0.8.5", {
+          "packageLocation": "./.yarn/cache/shelljs-npm-0.8.5-44be43f84a-7babc46f73.zip/node_modules/shelljs/",
+          "packageDependencies": [
+            ["shelljs", "npm:0.8.5"],
+            ["glob", "npm:7.2.3"],
+            ["interpret", "npm:1.4.0"],
+            ["rechoir", "npm:0.6.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["shx", [
+        ["npm:0.3.4", {
+          "packageLocation": "./.yarn/cache/shx-npm-0.3.4-49f9c5924a-0aa168bfdd.zip/node_modules/shx/",
+          "packageDependencies": [
+            ["shx", "npm:0.3.4"],
+            ["minimist", "npm:1.2.6"],
+            ["shelljs", "npm:0.8.5"]
           ],
           "linkType": "HARD",
         }]
